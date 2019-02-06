@@ -30,6 +30,6 @@ var eliminarTarea = function () {
 btnNuevaTarea.addEventListener('click', agregarTarea);
 tareaInput.addEventListener('click', eliminarTarea);
 //Borrando elementos en la lista.
-for (var k = 0; k <= lista.children.lenght - 1; k++) {
+for (var k = 0; k <= lista.children.length - 1; k++) {
     lista.children[k].addEventListener('click', eliminarTarea);
 }

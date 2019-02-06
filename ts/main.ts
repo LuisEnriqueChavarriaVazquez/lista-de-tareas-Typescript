@@ -1,7 +1,7 @@
 //Variables.
-let lista = document.getElementById("lista"),
-    tareaInput = document.getElementById("tareaInput"),
-    btnNuevaTarea = document.getElementById("btn-agregar");
+let lista = (<HTMLInputElement>document.getElementById("lista")),
+    tareaInput = (<HTMLInputElement>document.getElementById("tareaInput")),
+    btnNuevaTarea = (<HTMLInputElement>document.getElementById("btn-agregar"));
 
 //Funciones.
 
@@ -35,7 +35,7 @@ let agregarTarea = () =>{
     }
 
 
-    let eliminarTarea = () => {
+    let eliminarTarea = () =>  {
         this.parentNode.removeChild(this);
     }
 
@@ -46,6 +46,6 @@ let agregarTarea = () =>{
 
     //Borrando elementos en la lista.
 
-    for(let k = 0; k <= lista.children.lenght -1; k++){
+    for(let k = 0; k <= lista.children.length - 1; k++){
         lista.children[k].addEventListener('click', eliminarTarea);
     }
