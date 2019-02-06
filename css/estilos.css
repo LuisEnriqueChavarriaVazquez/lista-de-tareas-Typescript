@@ -40,11 +40,6 @@ body {
     border: none;
 }
 
-.principal .formulario input[type=text].error {
-    border: 5px solid #09af00;
-    color: red;
-}
-
 .principal .formulario .boton {
     background: #fff;
     color: #09af00;
