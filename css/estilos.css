@@ -19,11 +19,12 @@ body {
 }
 
 .principal {
-    background: #F44336;
-    border-top: 20px solid #D32F2F;
+    background: #09af00;
     color: #fff;
     padding: 50px 0;
     width: 100%;
+    padding: 30px;
+    box-shadow: 1px 1px 10px #B6B6B6;
 }
 
 .principal .formulario {
@@ -35,24 +36,29 @@ body {
     margin-bottom: 20px;
     padding: 10px;
     width: 100%;
+    border-radius: 5px;
+    border: none;
 }
 
 .principal .formulario input[type=text].error {
-    border: 5px solid #D32F2F;
+    border: 5px solid #09af00;
     color: red;
 }
 
 .principal .formulario .boton {
-    background: none;
-    border: 1px solid #D32F2F;
-    color: #fff;
+    background: #fff;
+    color: #09af00;
     display: inline-block;
     font-size: 16px;
     padding: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 0px 10px rgb(65, 64, 64);
+    transition: all ease .5s;
 }
 
 .principal .formulario .boton:hover {
-    border: 1px solid #fff;
+    box-shadow: 1px 0px 5px rgb(65, 64, 64);
 }
 
 
