@@ -3,7 +3,7 @@ let lista = (<HTMLInputElement>document.getElementById("lista")),
     tareaInput = (<HTMLInputElement>document.getElementById("tareaInput")),
     btnNuevaTarea = (<HTMLInputElement>document.getElementById("btn-agregar"));
 
-//Funciones.
+    //Funciones.
 
 let agregarTarea = () =>{
     let tarea = tareaInput.value,
@@ -34,10 +34,10 @@ let agregarTarea = () =>{
         }
     }
 
-
     let eliminarTarea = () =>  {
         this.parentNode.removeChild(this);
     }
+
 
     //Eventos de nuestra app.
 
@@ -49,3 +49,5 @@ let agregarTarea = () =>{
     for(let k = 0; k <= lista.children.length - 1; k++){
         lista.children[k].addEventListener('click', eliminarTarea);
     }
+
+    
